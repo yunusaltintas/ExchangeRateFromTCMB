@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LjCd77b1mYWtGwR8FBz3kCjVH3LdK96yqr1AYWKF8vc=",
+  "Source": "CurrencyRate.API",
+  "BasePath": "_content/CurrencyRate.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
