@@ -25,7 +25,6 @@ namespace CurrencyRate.Persistence
 
         public static void DatabaseInitialize(this IApplicationBuilder builder)
         {
-
             using var serviceScope =
                 builder.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope();
 

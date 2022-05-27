@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HpslLLz27VOJ8ZSYtlkKoI3lZnoWpxO2XAT6hcTNKVfibCFvbCccjNKZE1obiU5t71dfCFGqcLByGI5s1aEf6w==",
+  "dgSpecHash": "0C20pHiO1BT4pq0zYrIQhkznK4PUK1wXB6dfUmt3o8NkHLlq3H8AZeic2uX0V6aFk3BoBWeiOzUxSY2a0J9rHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Core\\CurrencyRate.Domain\\CurrencyRate.Domain.csproj",
+  "projectFilePath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Core\\CurrencyRate.Domain\\CurrencyRate.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

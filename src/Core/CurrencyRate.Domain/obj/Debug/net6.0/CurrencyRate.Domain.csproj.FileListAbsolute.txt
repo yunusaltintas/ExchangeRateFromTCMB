@@ -10,3 +10,15 @@ C:\Users\yunus\source\repos\CurrencyRate\src\Core\CurrencyRate.Domain\obj\Debug\
 C:\Users\yunus\source\repos\CurrencyRate\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\refint\CurrencyRate.Domain.dll
 C:\Users\yunus\source\repos\CurrencyRate\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.pdb
 C:\Users\yunus\source\repos\CurrencyRate\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\ref\CurrencyRate.Domain.dll
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\bin\Debug\net6.0\CurrencyRate.Domain.deps.json
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\bin\Debug\net6.0\CurrencyRate.Domain.dll
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\bin\Debug\net6.0\CurrencyRate.Domain.pdb
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.csproj.AssemblyReference.cache
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.AssemblyInfoInputs.cache
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.AssemblyInfo.cs
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.csproj.CoreCompileInputs.cache
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.dll
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\refint\CurrencyRate.Domain.dll
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\CurrencyRate.Domain.pdb
+C:\Users\yunus\Desktop\ExchangeRateFromTCMB\src\Core\CurrencyRate.Domain\obj\Debug\net6.0\ref\CurrencyRate.Domain.dll

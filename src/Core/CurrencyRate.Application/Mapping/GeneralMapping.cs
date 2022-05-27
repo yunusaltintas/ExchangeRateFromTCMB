@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using CurrencyRate.Application.Dtos;
+using CurrencyRate.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +14,8 @@ namespace CurrencyRate.Application.Mapping
 
         public GeneralMapping()
         {
-            //CreateMap<Language, LanguageCreateViewModel>()
-            //    .ReverseMap();
+            CreateMap<ExchangeRate, CurrencyDto>()
+                .ReverseMap();
 
         }
     }

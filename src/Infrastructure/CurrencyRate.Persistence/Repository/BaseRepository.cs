@@ -30,7 +30,7 @@ namespace CurrencyRate.Persistence.Repository
             await _dbSet.AddRangeAsync(entities);
         }
 
-        public async Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
+        public async Task<List<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
         {
             return await _dbSet.Where(predicate).ToListAsync();
         }

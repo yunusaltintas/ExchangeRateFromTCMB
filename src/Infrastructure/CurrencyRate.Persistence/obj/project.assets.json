@@ -2137,11 +2137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Infrastructure\\CurrencyRate.Persistence\\CurrencyRate.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Infrastructure\\CurrencyRate.Persistence\\CurrencyRate.Persistence.csproj",
       "projectName": "CurrencyRate.Persistence",
-      "projectPath": "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Infrastructure\\CurrencyRate.Persistence\\CurrencyRate.Persistence.csproj",
+      "projectPath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Infrastructure\\CurrencyRate.Persistence\\CurrencyRate.Persistence.csproj",
       "packagesPath": "C:\\Users\\yunus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Infrastructure\\CurrencyRate.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Infrastructure\\CurrencyRate.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -2162,8 +2162,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Core\\CurrencyRate.Application\\CurrencyRate.Application.csproj": {
-              "projectPath": "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Core\\CurrencyRate.Application\\CurrencyRate.Application.csproj"
+            "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Core\\CurrencyRate.Application\\CurrencyRate.Application.csproj": {
+              "projectPath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Core\\CurrencyRate.Application\\CurrencyRate.Application.csproj"
             }
           }
         }

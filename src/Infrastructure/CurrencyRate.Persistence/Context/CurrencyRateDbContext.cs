@@ -1,10 +1,6 @@
-﻿using CurrencyRate.Domain.Common;
+﻿using CurrencyRate.Domain.Entities;
+using CurrencyRate.Domain.EntityTypeBuilder;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CurrencyRate.Persistence.Context
 {
@@ -14,8 +10,12 @@ namespace CurrencyRate.Persistence.Context
         {
         }
 
+        public DbSet<ExchangeRate> ExchangeRates { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder
+                .ApplyConfiguration(new ExchangeRateTypeBuilder());
 
             base.OnModelCreating(modelBuilder);
         }

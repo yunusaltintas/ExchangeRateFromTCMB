@@ -14,7 +14,7 @@ namespace CurrencyRate.Application.Interfaces.IRepository
 
         Task<IEnumerable<TEntity>> GetAllAsync();
 
-        Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate);
+        Task<List<TEntity>> Where(Expression<Func<TEntity, bool>> predicate);
 
         Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
 

@@ -15,8 +15,6 @@ namespace CurrencyRate.Application
             var assm = Assembly.GetExecutingAssembly();
 
             services.AddAutoMapper(assm);
-            //services.AddSingleton<RestClient>();
-            //services.AddSingleton<IRestExtension, RestExtension>();
         }
     }
 }

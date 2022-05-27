@@ -1,4 +1,7 @@
+using CurrencyRate.Application.Interfaces.IService;
+using CurrencyRate.Application.SystemsModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace CurrencyRate.API.Controllers
 {
@@ -9,18 +12,24 @@ namespace CurrencyRate.API.Controllers
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+        };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IExchangeService _service;
+        private readonly TcmbSystemModel _tcmbSystemModel;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(
+            IExchangeService service,
+            IOptions<TcmbSystemModel> options)
         {
-            _logger = logger;
+
+            _service = service;
+            _tcmbSystemModel = options.Value;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<IEnumerable<WeatherForecast>> Get()
         {
+            //await _service.GetExchangeRate();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),

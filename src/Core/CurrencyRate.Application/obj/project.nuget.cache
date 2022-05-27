@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NrMdKqr53ZfXy0skxvSNxE7KMYK0boyZ9aEwn7KZjfQiHhPn6O9y96zlQw0V2BYfs4ZBlGzlTQkdtybk5hJoOQ==",
+  "dgSpecHash": "bRmmvIX5Q2TAdmYlcgJkB1lBkDt5gZXD5Gy78/vHRBXzdk+Ut29gEaCJ74mG6mwWn0Zr/kiouWM6spoPqNUHBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Core\\CurrencyRate.Application\\CurrencyRate.Application.csproj",
+  "projectFilePath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Core\\CurrencyRate.Application\\CurrencyRate.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yunus\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

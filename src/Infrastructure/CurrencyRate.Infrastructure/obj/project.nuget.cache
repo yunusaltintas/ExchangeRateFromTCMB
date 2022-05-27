@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mBrYK9Vf6HzDZIPBdARJVLI9GRbbho2ywI2TeIqREN3Os350IGKIB5LKYjC6RRiQrAdBkdpk1MpY9iRo13i2Bg==",
+  "dgSpecHash": "LnNL+3QNNSu+k+qNfxBb31m32OUTSeskrCb3vH2mds9/giiQKH1BusgxKsYYvr6dVgEOc7tfLCA6oEEJdKOECQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yunus\\source\\repos\\CurrencyRate\\src\\Infrastructure\\CurrencyRate.Infrastructure\\CurrencyRate.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Infrastructure\\CurrencyRate.Infrastructure\\CurrencyRate.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yunus\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -37,6 +37,7 @@
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\yunus\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

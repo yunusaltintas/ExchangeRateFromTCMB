@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CurrencyRate.Application.Interfaces.IService;
+using CurrencyRate.Infrastructure.Services;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +17,7 @@ namespace CurrencyRate.Infrastructure
             //services.AddScoped<IServiceManager, ServiceManager>();
             //services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
             //services.AddScoped<IPastTranslationService, PastTranslationService>();
-            //services.AddScoped<ILanguageService, LanguageService>();
+            services.AddScoped<IExchangeService, ExchangeService>();
         }
 
     }

@@ -11,10 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
     <Folder Include="Extension\" />
-    <Folder Include="Interfaces\IService\" />
-    <Folder Include="SystemsModels\" />
   </ItemGroup>
 
   <ItemGroup>
