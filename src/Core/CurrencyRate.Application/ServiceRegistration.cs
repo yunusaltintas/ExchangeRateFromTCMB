@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CurrencyRate.Application.Extension;
+using Microsoft.Extensions.DependencyInjection;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,9 @@ namespace CurrencyRate.Application
             var assm = Assembly.GetExecutingAssembly();
 
             services.AddAutoMapper(assm);
+
+            services.AddSingleton<RestClient>();
+            services.AddSingleton<IRestExtension, RestExtension>();
         }
     }
 }

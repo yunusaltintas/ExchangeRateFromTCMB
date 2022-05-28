@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CurrencyRate.Application.Dtos;
+using CurrencyRate.Application.Extension;
 using CurrencyRate.Application.Interfaces.IRepository;
 using CurrencyRate.Application.Interfaces.IService;
 using CurrencyRate.Application.Interfaces.IUnitOfWork;
@@ -24,22 +25,27 @@ namespace CurrencyRate.Infrastructure.Services
         private readonly IBaseRepository<ExchangeRate> _baseRepository;
         public readonly IUnitOfWork _unitOfWork;
         public readonly IMapper _mapper;
+        private readonly IRestExtension _restExtension;
 
         public ExchangeService(
             IOptions<TcmbSystemModel> options,
             IMapper mapper,
             IBaseRepository<ExchangeRate> baseRepository,
-            IUnitOfWork unitOfWork)
+            IUnitOfWork unitOfWork,
+            IRestExtension restExtension)
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
             _tcmbSystemModel = options.Value;
             _baseRepository = baseRepository;
+            _restExtension = restExtension;
         }
 
         public async Task GetAndSave()
         {
             var exchangeRates = await GetExchangeRate();
+
+            List<string> filterNames = new List<string>() { "USD", "EUR", "GBP", "CHF", "KWD", "SAR", "RUB" };
 
             var filters = exchangeRates.Currency.Where(i =>
                i.CurrencyCode == "USD"
@@ -69,20 +75,9 @@ namespace CurrencyRate.Infrastructure.Services
 
         public async Task<CurrencyListDto?> GetExchangeRate()
         {
-            var client = new RestClient();
-            var request = new RestRequest(_tcmbSystemModel.BaseUrl, Method.Get);
-            var query = await client.ExecuteAsync(request);
+            var query = await _restExtension.Get(_tcmbSystemModel.BaseUrl);
 
-            XmlSerializer MyDeserializer = new XmlSerializer(typeof(CurrencyListDto));
-            StringReader SR = new StringReader(query.Content);
-            XmlReader XR = new XmlTextReader(SR);
-
-            if (MyDeserializer.CanDeserialize(XR))
-            {
-                var model = (CurrencyListDto)MyDeserializer.Deserialize(XR);
-                return model;
-            }
-            return null;
+            return XmlExtension.Deserilize<CurrencyListDto>(query.Content);
         }
 
         public async Task<IEnumerable<ExchangeRate>> AddRangeAsync(IEnumerable<ExchangeRate> entities)
@@ -106,14 +101,7 @@ namespace CurrencyRate.Infrastructure.Services
 
             var query = await _baseRepository.GetAllAsync();
 
-            if (descending)
-            {
-                query = query.OrderByDescending(x => prop.GetValue(x, null));
-            }
-            else
-            {
-                query = query.OrderBy(x => prop.GetValue(x, null));
-            }
+            query = descending ? query.OrderByDescending(x => prop.GetValue(x, null)) : query.OrderBy(x => prop.GetValue(x, null));
 
             return _mapper.Map<List<CurrencyDto>>(query);
         }

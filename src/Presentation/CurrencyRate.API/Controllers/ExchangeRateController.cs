@@ -19,9 +19,9 @@ namespace CurrencyRate.API.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<CustomResponseDto<List<CurrencyDto>>>> GetAllCurrencies(bool? descending = true, string? propertyName = "LastUpdated")
+        public async Task<ActionResult<CustomResponseDto<List<CurrencyDto>>>> Currencies(bool? desc = true, string? propName = "LastUpdated")
         {
-            var resultList = await _exchangeService.GetAllCurrenciesAsync(descending.Value, propertyName);
+            var resultList = await _exchangeService.GetAllCurrenciesAsync(desc.Value, propName);
 
             if (resultList is null)
                 return new NoContentResult();
@@ -31,7 +31,7 @@ namespace CurrencyRate.API.Controllers
         }
 
         [HttpGet("{currency}")]
-        public async Task<ActionResult<CustomResponseDto<List<ChangeByCurrencyDto>>>> GetByCurrency(string currency)
+        public async Task<ActionResult<CustomResponseDto<List<ChangeByCurrencyDto>>>> Currency(string currency)
         {
             var result = await _exchangeService.GetByCurrencyAsync(currency);
 

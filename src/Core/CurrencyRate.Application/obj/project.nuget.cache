@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bRmmvIX5Q2TAdmYlcgJkB1lBkDt5gZXD5Gy78/vHRBXzdk+Ut29gEaCJ74mG6mwWn0Zr/kiouWM6spoPqNUHBg==",
+  "dgSpecHash": "V2s9tPENfSEx8d0AiYXczok3q777Gc+8bvF2LCQjK7b1a97BEgaR5GHN23wnJR93nWUn7CHZLhNUKlD84hWMtA==",
   "success": true,
   "projectFilePath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Core\\CurrencyRate.Application\\CurrencyRate.Application.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\yunus\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\yunus\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

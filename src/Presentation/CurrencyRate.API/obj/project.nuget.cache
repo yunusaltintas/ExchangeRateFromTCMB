@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "42LdQ5q+jDRkAzcwnRIbSlmK5yzniCFadiOPPHWrMluftiBkwGMAq2zkdvWnypgDAhlvsHmAL5d9FwTUS5SCdg==",
+  "dgSpecHash": "8pfOF1H77VTYfvw4rreDov4QFo8Cx2BnzOUJu+0k+spKwRe1YaUiM/JT9E1hIPFjlRQr5UGktxmzVfT3LBDDqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Presentation\\CurrencyRate.API\\CurrencyRate.API.csproj",
   "expectedPackageFiles": [

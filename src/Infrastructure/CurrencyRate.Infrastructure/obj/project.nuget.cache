@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LnNL+3QNNSu+k+qNfxBb31m32OUTSeskrCb3vH2mds9/giiQKH1BusgxKsYYvr6dVgEOc7tfLCA6oEEJdKOECQ==",
+  "dgSpecHash": "fHi6nppJGrTYQvUCQNtlsV821+AwPgjCJoRvVkOQMzXBgjLwGcK7kXQB5MUhGG9I+HXC3MovtAWGPFgUJK5vgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\yunus\\Desktop\\ExchangeRateFromTCMB\\src\\Infrastructure\\CurrencyRate.Infrastructure\\CurrencyRate.Infrastructure.csproj",
   "expectedPackageFiles": [
