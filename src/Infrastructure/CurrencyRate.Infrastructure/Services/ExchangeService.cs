@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CurrencyRate.Application.Dtos;
+using CurrencyRate.Application.Dtos.Exceptions;
 using CurrencyRate.Application.Extension;
 using CurrencyRate.Application.Interfaces.IRepository;
 using CurrencyRate.Application.Interfaces.IService;
@@ -12,6 +13,7 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -41,25 +43,15 @@ namespace CurrencyRate.Infrastructure.Services
             _restExtension = restExtension;
         }
 
-        public async Task GetAndSave()
+        public async Task GetExchangeRateAndSaveJob()
         {
             var exchangeRates = await GetExchangeRate();
 
-            List<string> filterNames = new List<string>() { "USD", "EUR", "GBP", "CHF", "KWD", "SAR", "RUB" };
+            var currencies = Filter(exchangeRates.Currency);
 
-            var filters = exchangeRates.Currency.Where(i =>
-               i.CurrencyCode == "USD"
-            || i.CurrencyCode == "EUR"
-            || i.CurrencyCode == "GBP"
-            || i.CurrencyCode == "CHF"
-            || i.CurrencyCode == "KWD"
-            || i.CurrencyCode == "SAR"
-            || i.CurrencyCode == "RUB"
-            );
+            var currencyList = new List<ExchangeRate>();
 
-            var currencyLit = new List<ExchangeRate>();
-
-            foreach (var item in filters)
+            foreach (var item in currencies)
             {
                 var exchangeRate = new ExchangeRate()
                 {
@@ -67,15 +59,20 @@ namespace CurrencyRate.Infrastructure.Services
                     Rate = item.ForexBuying,
                     LastUpdated = Convert.ToDateTime(exchangeRates.DataTarihString)
                 };
-                currencyLit.Add(exchangeRate);
+                currencyList.Add(exchangeRate);
             }
 
-            await AddRangeAsync(currencyLit);
+            await AddRangeAsync(currencyList);
         }
 
         public async Task<CurrencyListDto?> GetExchangeRate()
         {
             var query = await _restExtension.Get(_tcmbSystemModel.BaseUrl);
+
+            if (query.StatusCode != HttpStatusCode.OK)
+            {
+                throw new CustomException("Opps.", "41");
+            }
 
             return XmlExtension.Deserilize<CurrencyListDto>(query.Content);
         }
@@ -130,6 +127,18 @@ namespace CurrencyRate.Infrastructure.Services
         private decimal? Calculae(int i, List<ExchangeRate> model)
         {
             return ((model[i].Rate - model[i - 1].Rate) / model[i].Rate) * 100;
+        }
+
+        private List<Currency> Filter(List<Currency> currency)
+        {
+            List<string> filterNames = new List<string>() { "USD", "EUR", "GBP", "CHF", "KWD", "SAR", "RUB" };
+
+            List<Currency> currencies = new List<Currency>();
+            filterNames.ForEach(p =>
+            {
+                currencies.AddRange(currency.Where(i => i.CurrencyCode == p));
+            });
+            return currencies;
         }
     }
 }

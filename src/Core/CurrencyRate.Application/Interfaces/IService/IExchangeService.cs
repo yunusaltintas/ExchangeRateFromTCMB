@@ -13,7 +13,7 @@ namespace CurrencyRate.Application.Interfaces.IService
         Task<CurrencyListDto?> GetExchangeRate();
         Task AddAsync(ExchangeRate entity);
         Task<IEnumerable<ExchangeRate>> AddRangeAsync(IEnumerable<ExchangeRate> entities);
-        Task GetAndSave();
+        Task GetExchangeRateAndSaveJob();
         Task<List<CurrencyDto>> GetAllCurrenciesAsync(bool descending, string propertyName);
         Task<List<ChangeByCurrencyDto>> GetByCurrencyAsync(string currency);
     }

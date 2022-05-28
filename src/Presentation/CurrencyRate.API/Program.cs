@@ -48,7 +48,7 @@ app.UseHangfireDashboard(
         Authorization = new[] { new HangfireAuthorizationFilter() },
     });
 var recurringJobManager = app.Services.GetRequiredService<IRecurringJobManager>();
-recurringJobManager.AddOrUpdate<IExchangeService>("ExchangeSaveJob", o => o.GetAndSave(), "35 12 * * *");
+recurringJobManager.AddOrUpdate<IExchangeService>("ExchangeSaveJob", o => o.GetExchangeRateAndSaveJob(), "35 12 * * *");
 
 app.UseMiddleware<RequestResponseMiddleware>();
 app.UseRouting();
