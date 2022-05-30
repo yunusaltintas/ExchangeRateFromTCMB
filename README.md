@@ -1,13 +1,14 @@
 # ExchangeRateFromTCMB
 
 Code First yaklaşımıyla yazılmıştır. Projeyi çalıştırdığınızda, veritabanı otomatik olarak oluşturulacaktır.
-TCMB servisinden günde bir kez döviz kurlarını alan sonrasında veri tabanınıza kaydedeni ve belirli para birimi için günlük değişim oranını listeleyen uygulumayazılmıştır.
+TCMB servisinden günde bir kez döviz kurlarını alan sonrasında veri tabanınıza kaydedeni ve belirli para birimi için günlük değişim oranını listeleyen uyguluma yazılmıştır.
 
 Used Technologies:
 
 .Net6 Core API, 
 RestService, 
-MSSQL, 
+MSSQL,
+Unit Test, 
 Hangfire, 
 AutoMapper, 
 Rest-Sharp, 
